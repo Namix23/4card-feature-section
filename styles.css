@@ -1,92 +1,100 @@
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background: #f0f0f5;
-    color: #333;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #f0f0f5;
+  color: #333;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-header h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 0.5em;
+h1 {
+  font-size: 2.12rem;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  margin: 0;
 }
 
-header h2 {
-    font-size: 1.5em;
-    color: #6b5b95;
-    margin-bottom: 1em;
+h2 {
+  font-size: 2.12em;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  color: hsl(234, 12%, 34%);
 }
 
 header p {
-    font-size: 1em;
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto;
+  font-size: 1em;
+  color: hsl(229, 6%, 66%);
+  max-width: 600px;
+  margin-top: 1rem;
+  padding: 0 30rem;
+  font-weight: 400;
 }
 
 section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card-container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
 }
 
 .card-container h3 {
-    margin: 20px 0;
-    font-size: 1.2em;
-    color: #333;
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #333;
 }
 
 .card-container p {
-    font-size: 0.9em;
-    color: #666;
-    margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .card-container img {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: -30px;
-    left: calc(50% - 30px);
-    background: #fff;
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 30px);
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .supervisor-card {
-    border-top: 5px solid #45d3d3;
+  border-top: 5px solid #45d3d3;
 }
 
 .teambuilder-card {
-    border-top: 5px solid #ea5353;
+  border-top: 5px solid #ea5353;
 }
 
 .karma-card {
-    border-top: 5px solid #f7b72a;
+  border-top: 5px solid #f7b72a;
 }
 
 .calculator-card {
-    border-top: 5px solid #549ef2;
+  border-top: 5px solid #549ef2;
 }
