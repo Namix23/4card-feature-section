@@ -59,30 +59,29 @@ img {
   margin-left: auto;
 }
 
-.card-container h3 {
+h3 {
   margin: 20px 0 10px;
-  font-size: 1.4em;
-  color: #333;
+  font-size: 1.4rem;
+  color: hsl(234, 12%, 34%);
 }
 
-.card-container p {
-  font-size: 1em;
-  color: #666;
+p {
+  color: hsl(229, 6%, 66%);
   line-height: 1.5;
 }
 
 .supervisor-card {
-  border-top: 4px solid #44d3d2;
+  border-top: 4px solid hsl(180, 62%, 55%);
 }
 
 .teambuilder-card {
-  border-top: 4px solid #ea5353;
+  border-top: 4px solid hsl(0, 78%, 62%);
 }
 
 .karma-card {
-  border-top: 4px solid #f7b72a;
+  border-top: 4px solid hsl(34, 97%, 64%);
 }
 
 .calculator-card {
-  border-top: 4px solid #549ef2;
+  border-top: 4px solid hsl(212, 86%, 64%);
 }
