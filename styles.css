@@ -16,14 +16,14 @@ header {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.45rem;
   font-weight: 200;
   color: hsl(234, 12%, 34%);
   margin: 0;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.45rem;
   font-weight: 600;
   color: hsl(234, 12%, 34%);
   margin: 0;
@@ -33,22 +33,30 @@ header p {
   font-size: 1rem;
   color: hsl(229, 6%, 66%);
   padding: 1.1rem;
+   line-height: 2rem;
 }
 
 section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .container {
   background: hsl(0, 0%, 98%);
-  padding: 30px;
-  border-radius: 10px;
+  padding: 1.8rem;
+  border-radius: .3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 100%;
+  max-width: 20rem;
+  margin: 1rem;
+}
+
+.container p {
+  text-align: left;
+  line-height: 2rem;
 }
 
 img {
@@ -63,25 +71,46 @@ h3 {
   margin: 20px 0 10px;
   font-size: 1.4rem;
   color: hsl(234, 12%, 34%);
+  text-align: left;
 }
 
 p {
   color: hsl(229, 6%, 66%);
-  line-height: 1.5;
+  line-height: 1;
 }
 
-.supervisor-card {
-  border-top: 4px solid hsl(180, 62%, 55%);
-}
+@media (min-width: 768px) {
+  section{
+    display: grid;
+    grid-template-areas:
+      "supervisor teambuilder calculator"
+      "supervisor karma calculator";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
 
-.teambuilder-card {
-  border-top: 4px solid hsl(0, 78%, 62%);
-}
+  .supervisor-card {
+    grid-area: supervisor;
+    border-top: 4px solid hsl(180, 62%, 55%);
+    align-self: center;
+  }
 
-.karma-card {
-  border-top: 4px solid hsl(34, 97%, 64%);
-}
+  .teambuilder-card {
+    grid-area: teambuilder;
+    border-top: 4px solid hsl(0, 78%, 62%);
+    justify-self: center;
+  }
 
-.calculator-card {
-  border-top: 4px solid hsl(212, 86%, 64%);
+  .karma-card {
+    grid-area: karma;
+    border-top: 4px solid hsl(34, 97%, 64%);
+    justify-self: center;
+  }
+
+  .calculator-card {
+    grid-area: calculator;
+    border-top: 4px solid hsl(212, 86%, 64%);
+    align-self: center;
+  }
 }
