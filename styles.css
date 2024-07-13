@@ -33,7 +33,7 @@ header p {
   font-size: 1rem;
   color: hsl(229, 6%, 66%);
   padding: 1.1rem;
-   line-height: 2rem;
+  line-height: 2rem;
 }
 
 section {
@@ -46,7 +46,7 @@ section {
 .container {
   background: hsl(0, 0%, 98%);
   padding: 1.8rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 100%;
@@ -60,15 +60,15 @@ section {
 }
 
 img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
   display: block;
   margin-left: auto;
 }
 
 h3 {
-  margin: 20px 0 10px;
+  margin: 1rem 0 0.5rem;
   font-size: 1.4rem;
   color: hsl(234, 12%, 34%);
   text-align: left;
@@ -79,8 +79,31 @@ p {
   line-height: 1;
 }
 
+.supervisor-card,
+.teambuilder-card,
+.karma-card,
+.calculator-card {
+  box-shadow: 0 18px 17px -6px #6f9fd538;
+}
+
+.supervisor-card {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.teambuilder-card {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma-card {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator-card {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
 @media (min-width: 768px) {
-  section{
+  section {
     display: grid;
     grid-template-areas:
       "supervisor teambuilder calculator"
@@ -92,25 +115,21 @@ p {
 
   .supervisor-card {
     grid-area: supervisor;
-    border-top: 4px solid hsl(180, 62%, 55%);
     align-self: center;
   }
 
   .teambuilder-card {
     grid-area: teambuilder;
-    border-top: 4px solid hsl(0, 78%, 62%);
     justify-self: center;
   }
 
   .karma-card {
     grid-area: karma;
-    border-top: 4px solid hsl(34, 97%, 64%);
     justify-self: center;
   }
 
   .calculator-card {
     grid-area: calculator;
-    border-top: 4px solid hsl(212, 86%, 64%);
     align-self: center;
   }
 }
